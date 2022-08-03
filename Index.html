@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 id="cadastro">
+
+        <link rel="stylesheet" href="style.css">
+    </h1>
+    <title>Cadastro Serviço</title>
+</head>
+<body onload='mostrarDadosServicos();mostrarDadosObras(); ExibirExecutadosNoSite();'>
+    <button onclick="novoCadastro()" class="cadastrarNovo">CADASTRAR NOVOS DADOS</button>
+    <div class="Novo">
+        <h3>Cadastrar o Serviço</h3>
+        <input type="text" placeholder="Serviço" id="serviço">
+        <button onclick="gravarDadosServicos();retornar();document.location.reload()">Salvar</button>
+        <h3>Informe a Obra</h3>
+        <input type="text" placeholder="Obra" id="obra">
+        <button onclick="gravarDadosObras();retornar();document.location.reload()">Salvar</button>
+    </div>
+    <button onclick="novoRealizado()" class="servicosRealizados">CADASTRAR REALIZADOS</button>
+    <div class="servicosExecutados">
+        <h3>Quantidade Executada</h3>
+        <input id="quantidade" type="text" placeholder="Informe a quantidade executada" style="width: 200px;">
+        <!-- <input id="idDoExecutado" type="text" placeholder="Id do executado"> -->
+        <h3>Escolha o serviço</h3>
+            <form action="">
+                <select id = 'servicos' name ="Servicos" placeholder="Selecione o serviço" style="width: 200px;">
+                    <option>Escolha o serviço: </option>
+                </select>
+            </form>
+                <h3>Escolha a Obra</h3>
+                <form action="">
+                    <select id="obras"name ="obras" placeholder="Selecione a obra" style="width: 200px;">
+                        <option>Escolha a obra: </option>
+                    </select>
+                </form>
+
+    </div>
+            <br><br>
+            <button class= "botaoGravar"onclick="gravarDadosExecutados();document.location.reload()"> Gravar </button>
+            <!-- <button onclick="atualizarMetragem();document.location.reload()">Atualizar</button> -->
+        <h3>Link do Drive para o anexo</h3>
+        <input type="text" placeholder="Cole o link aqui!">
+        <button onclick="resetarValoresServicos();resetarValoresObras();resetarValoresExecutados();">Resetar</button> 
+        <h1>Total Executado nas obras: </h1>
+        <table id="tabela">
+           
+        </table>
+        <script src="dataBase.js"></script>
+    
+</body>
+</html>
