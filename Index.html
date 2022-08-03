@@ -11,16 +11,16 @@
     <title>Cadastro Serviço</title>
 </head>
 <body onload='mostrarDadosServicos();mostrarDadosObras(); ExibirExecutadosNoSite();'>
-    <button onclick="novoCadastro()" class="cadastrarNovo">CADASTRAR NOVOS DADOS</button>
+    <button onclick="novoCadastro()" class="cadastrarNovo"><span>CADASTRAR NOVOS DADOS</span></button>
     <div class="Novo">
         <h3>Cadastrar o Serviço</h3>
         <input type="text" placeholder="Serviço" id="serviço">
-        <button onclick="gravarDadosServicos();retornar();document.location.reload()">Salvar</button>
+        <button class="button" onclick="gravarDadosServicos();retornar();document.location.reload()"><span>Salvar</span></button>
         <h3>Informe a Obra</h3>
         <input type="text" placeholder="Obra" id="obra">
-        <button onclick="gravarDadosObras();retornar();document.location.reload()">Salvar</button>
+        <button class="button" onclick="gravarDadosObras();retornar();document.location.reload()"><span>Salvar</span></button>
     </div>
-    <button onclick="novoRealizado()" class="servicosRealizados">CADASTRAR REALIZADOS</button>
+    <button onclick="novoRealizado()" class="servicosRealizados"><span>CADASTRAR REALIZADOS</span></button>
     <div class="servicosExecutados">
         <h3>Quantidade Executada</h3>
         <input id="quantidade" type="text" placeholder="Informe a quantidade executada" style="width: 200px;">
