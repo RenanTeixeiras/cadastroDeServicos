@@ -1,10 +1,26 @@
+body {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  text-align: center;
+}
 
 .cadastrarNovo {
     display: none;
 }
 
+.Novo {
+  border: 2px solid;
+  height: 250px;
+  padding-top: 20px;
+}
+
 .servicosExecutados {
     display: none;
+}
+.servicosRealizados {
+  display: none;
 }
 .botaoGravar {
     display: none;
@@ -49,5 +65,21 @@
     opacity: 1;
     right: 0;
   }
+  .inputs {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: #f4511e;
+  }
 
+.table {
+  margin-left: 30px;
+  padding: 20px;
+  height: 180px;
+}
+
+.table tr {
+  background-color: #eb44159c;
+  border: 2px solid;
+}
 
